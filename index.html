@@ -11,64 +11,64 @@
   <!--main container-->
   <main class="wrapper">
     <aside class="sidebar">
-      <img class="my-photo" src="My%20photo.JPG" alt="My%20photo">
+      <img class="my-photo" src="./img/My-photo.JPG" alt="My%20photo">
 
       <!--Contacts contaner-->
-      <div class="contacts-container">
-        <h3 class="contacts-title">Contacts</h3>
+      <nav class="contacts-container">
+        <h3 class="title">Contacts</h3>
         <ul>
-          <li>
+          <li class="item">
             <span class="contacts-link-type">Skype:</span><a class="contacts-link" href="lippi_mess">lippi_mess</a> 
           </li>
-          <li>
+          <li class="item">
             <span class="contacts-link-type">Cell:</span><a class="contacts-link" href="tel:+38/099/278/53/78">+38 099 278 53 78</a> 
           </li>
-          <li>
+          <li class="item">
             <span class="contacts-link-type">Email:</span><a class="contacts-link" href="mailto:mystafinayulija@gmail.com">mystafinayulija@gmail.com</a>
           </li> 
         </ul>
-      </div>
+      </nav>
 
       <!--Tech skills container-->
-      <div class="tech-skills-container">
-        <h3 class="tech-skills-title">Tech Skills</h3>
+      <nav class="tech-skills-container">
+        <h3 class="title">Tech Skills</h3>
         <ul>
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">HTML5/CSS3</span>
           </li> 
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">Git/GitHub</span>
           </li> 
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">Bootstrap 4</span>
           </li>
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">JavaScript/TypeScript</span>
           </li>
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">Angular 2+</span>
           </li>
-           <li class="tech-skills-item"> 
+           <li class="item"> 
              <span class="tech-skills-text">SASS (SCSS)</span>
           </li>
         </ul>
-      </div>
+      </nav>
 
       <!--Soft Skills-->
-      <div class="languages-container">
-        <h3 class="languages-title">Languages</h3>
+      <nav class="languages-container">
+        <h3 class="title">Languages</h3>
         <ul>
-          <li class="languages-item">
+          <li class="item">
             <span class="languages-text">Ukrainian - Mother tongue</span>
           </li> 
-          <li class="languages-item">
+          <li class="item">
             <span class="languages-text">Russian - Mother tongue</span>
           </li> 
-          <li class="languages-item">
+          <li class="item">
             <span class="languages-text">English - Pre-Intermediate</span>
           </li>
         </ul>
-      </div>
+      </nav>
     </aside>
     
     <!--about me container-->
@@ -76,44 +76,53 @@
       <h2 class="profession">Front-End Developer</h2>
       <!--about me main info--> 
       <article class="info-container">
-        <h2 class="name">Yuliia Mustafina</h2>
+        <h1 class="name">Yuliia Mustafina</h1>
         <p class="description">I am an enthusiastic and attentive to detail Frontend Software Engineer 
           looking for an entry-level position in the company to use my programming skills, 
           helping to complete projects on time and improve, hone my skills.
         </p>
+        <iframe class="self-introduction" width="360" height="215" src="https://www.youtube.com/embed/qV4M9h31QKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
       <!--projects container-->
       <article class="projects-container">
-        <h3 class="about-me-title">Some code examples:</h3>
+        <h3 class="about-me-title">Some code examples and projects:</h3>
         <pre>
+          <div class="wrraper-project">
+            <span>Photo filter:</span>
+            <a class="project" href="https://github.com/rolling-scopes-school/mustafina1990-JSFE2021Q1/pull/26">
+              <img src="./img/photo-filter.jpg" width="200" heigth="200" alt="photo-filter.jpg">
+            </a>
+            <span>Virtual piano:</span>
+            <a class="project" href="https://github.com/rolling-scopes-school/mustafina1990-JSFE2021Q1/pull/3">
+              <img src="./img/virtual-piano.jpg" width="200" heigth="200" alt="virtual-piano.jpg">
+            </a>
+          </div>
+          <h4 class="about-me-title task-font">Task from codewars "Absent vowel"</h4>
           <code>
-            &lt;!DOCTYPE html&gt;
-            &lt;html lang="en"&gt;
-            &lt;head&gt;
-              &lt;meta charset="UTF-8"&gt;
-              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-              &lt;title&gt;Verstka&lt;/title&gt;
-              &lt;link rel="stylesheet" href="zad_2.css"&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-              &lt;div&gt;
-                &lt;header class="head"&gt;Шапка&lt;/header&gt;
-                &lt;nav class="control"&gt;Блок навигации&lt;/nav&gt;
-                &lt;main class="main_part"&gt;
-                    &lt;section class="menu"&gt;Меню&lt;/section&gt;
-                    &lt;section class="content"&gt;Контент&lt;/section&gt;
-                &lt;/main&gt;
-                &lt;footer class="contacts"&gt;Подвал сайта&lt;/footer&gt;
-              &lt;/div&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
+            function absentVowel(x){
+              if (!(x.includes('a'))) {
+                return 0;
+              }
+               else if (!(x.includes('e'))) {
+                return 1;
+              }
+               else if (!(x.includes('i'))) {
+                return 2;
+              }
+               else if (!(x.includes('o'))) {
+                return 3;
+              }
+               else if (!(x.includes('u'))) {
+                return 4;
+              }
+             }
           </code>
-        </pre>    
+        </pre>
       </article>
 
       <!--work experience-->
-      <article>
+      <article class="wrraper-company">
         <h3 class="about-me-title">Work Experience</h3>
 
         <!--company 1-->
@@ -128,7 +137,7 @@
         <div>
           <h4 class="profession-title">Civil servant (Chief Specialist in Public Procurement) 
             <span class="profession-company">CMU</span>
-            <span class="profession-time">June 2017 - Present</span>  
+            <span class="profession-time">June 2017 - Present</span>
           </h4>
         </div>
 
@@ -142,30 +151,37 @@
       </article>
 
       <!--Education-->
-      <article>
+      <article class="wrraper-company">
         <h3 class="about-me-title">Education</h3>
-        <!--education 1-->
+         <!--education 1-->
+         <div>
+          <h4 class="education-type-one">RSSCHOOL
+            <span class="education-type-two">JavaScript/Front-end</span>
+            <span class="education-time">2021-now</span>
+          </h4>
+        </div>
+        <!--education 2-->
         <div>
           <h4 class="education-type-one">Udemy
             <span class="education-type-two">Angular 9, theory and practice</span>
             <span class="education-time">2021</span>
           </h4>
         </div>
-        <!--education 2-->
+        <!--education 3-->
         <div>
           <h4 class="education-type-one">CyberBionic Systematics
             <span class="education-type-two">Frontend Developer courses</span>
             <span class="education-time">2020</span>
           </h4>
         </div>
-        <!--education 3-->
+        <!--education 4-->
         <div>
           <h4 class="education-type-one">Kyiv National University of trade and economics
             <span class="education-type-two">Bachelor of Commercial law</span>
             <span class="education-time">2013</span>
           </h4>
         </div>
-        <!--education 4-->
+        <!--education 5-->
         <div>
           <h4 class="education-type-one">Kyiv National University of trade and economics
             <span class="education-type-two">Master of Accounting and Auditing</span>
